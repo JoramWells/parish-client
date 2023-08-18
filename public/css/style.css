@@ -1,0 +1,67 @@
+body{
+    background-color: whitesmoke;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+}
+.primary-btn{
+    background: url('../imgs/button.svg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* height: 2rem; */
+    padding: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 5px;
+    color: white;
+}
+
+.primary-btn:hover{
+    cursor: pointer;
+}
+.icon-response{
+
+
+}
+
+.icon-response:hover{
+    cursor: pointer;
+}
+
+.img-button{
+    object-fit: contain;
+}
+
+.social-main-container{
+    display: block;
+    /* justify-content: space-between;
+    align-items: center; */
+    width: 75%;
+    margin: auto;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-container{
+    border: 1px solid whitesmoke;
+    /* width: 2.5rem; */
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 15px;
+    color: grey;
+}
+
+.social-container:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
