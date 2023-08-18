@@ -2,6 +2,8 @@ import Image from 'next/image'
 import '/public/css/style.css'
 import { useRouter } from 'next/router'
 import 'tailwindcss/tailwind.css'
+import SocialButton from '@/components/Buttons/SocialButton'
+import TextInput from '@/components/TextInput'
 
 
 export default function register() {
@@ -16,7 +18,7 @@ export default function register() {
             boxSizing: 'border-box',
             width: '100%',
             height: '100vh',
-            padding:'20px'
+            padding: '20px'
         }}>
             <div style={{
                 margin: 'auto',
@@ -44,58 +46,19 @@ export default function register() {
                         <Image src='/imgs/close.svg' alt='close-icon' className='icon-response' height={15} width={15} />
                     </div>
 
-                    <div style={{
-                        marginTop: "2rem"
-                    }}>
-                        <div className='text-gray-500'>Email Address</div>
-                        <input className=' w-full bg-blue-50 border border-1 rounded-full' type="text" placeholder='Enter First Name' style={{
-                            // border: "1px solid whitesmoke",
-                            padding: "10px",
-                            // width: "90%",
-                            marginTop: "1rem",
-                            outline:'none'
-                        }} />
-                    </div>
+                    {/* Input files */}
+                    <TextInput label='Email Address' placeholder='Enter Email Address' type='text' />
 
-                    {/* station */}
-                    <div style={{
-                        marginTop: "2rem"
-                    }}>
-                        <div className='text-gray-500'>Enter Station</div>
-                        <input type="text" placeholder='Parish' style={{
-                            border: "1px solid whitesmoke",
-                            padding: "10px",
-                            width: "90%",
-                            marginTop: "1rem"
-                        }} />
-                    </div>
+                    <TextInput label='Station' placeholder='Enter Station' type='text' />
 
-                    {/* Enter Password */}
-                    <div style={{
-                        marginTop: "2rem"
-                    }}>
-                        <div typeof='label' className='text-gray-500'>Password</div>
-                        <input type="text" placeholder='Enter First Name' style={{
-                            border: "1px solid whitesmoke",
-                            padding: "10px",
-                            marginTop: "1rem",
-                            width: "90%"
-                        }} />
-                    </div>
 
-                    {/* confirm password */}
+                    <TextInput label='Password' placeholder='Enter Password' type='text' />
 
-                    <div style={{
-                        marginTop: "2rem"
-                    }}>
-                        <div typeof='label' className='text-gray-500'>Confirm Password</div>
-                        <input type="text" placeholder='Confirm Password' style={{
-                            border: "1px solid whitesmoke",
-                            padding: "10px",
-                            marginTop: "1rem",
-                            width: "90%"
-                        }} />
-                    </div>
+
+                    <TextInput label='Confirm Password' placeholder='Re-enter Password' type='text' />
+
+
+
 
                     <div style={{
                         marginTop: '2rem',
@@ -114,41 +77,30 @@ export default function register() {
                             Fogort password, recover?
                         </div>
                     </div>
+
+                    {/* Register */}
                     <div style={{
                         marginTop: '3rem',
                         marginBottom: '2rem',
-                    }}>
-                        <div onClick={() => router.push('/register')} role='button' className='primary-btn rounded-md  p-2 text-white text-center' style={{
+                    }}
+
+                        className='transition ease-in-out delay-150 cursor-pointer bg-gray-50 hover:-translate-y-1'
+
+                    >
+                        <div role='button' className='primary-btn rounded-md  p-2 text-white text-center' style={{
                             display: 'block',
                             margin: "auto",
                             width: '70%',
 
-                        }}>Login</div>
+                        }}>Register</div>
                     </div>
                     {/* Social Authentication */}
 
-                    <div className="social-main-container">
 
-
-                        <div className='flex-container'>
-                            <div className='social-container'>
-                                <Image className='img-button' src={"/imgs/google.png"} alt="Google-logo" height={20} width={50} />
-                                <div>
-                                    Continue with Google
-                                </div>
-                            </div>
-                            <div className='social-container'>
-                                <Image className='img-button' src={"/imgs/facebook.png"} alt="Google-logo" height={20} width={50} />
-                                <div>
-                                    Continue with Facebook
-                                </div>
-                            </div>
-    
-
-                        </div>
+                    <div className='flex flex-row justify-between'>
+                        <SocialButton text={'Continue with Google'} img_src={'/imgs/google.png'} />
+                        <SocialButton text={'Continue with Facebook'} img_src={'/imgs/facebook.png'} />
                     </div>
-
-
 
                 </form>
             </div>
