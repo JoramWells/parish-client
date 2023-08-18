@@ -9,6 +9,12 @@ import LoginHeader from '@/components/LoginHeader'
 import { _remember_me } from '@/utils/reusable'
 import PrimaryButton from '@/components/Buttons/PrimaryButton'
 
+
+// define metadata
+export const metadata= {
+  title:'Login'
+}
+
 export default function login() {
 
   // define router

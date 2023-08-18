@@ -5,7 +5,10 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Parish Diocese',
+  title: {
+    default: 'Parish Diocese',
+    template: "%s | My title"
+  },
   description: 'Parish Diocese Church ERP',
 }
 
