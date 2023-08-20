@@ -6,7 +6,6 @@ import SocialButton from '@/components/Buttons/SocialButton'
 import LoginHeader from '@/components/LoginHeader'
 
 // util components
-import { _remember_me } from '@/utils/reusable'
 import PrimaryButton from '@/components/Buttons/PrimaryButton'
 
 

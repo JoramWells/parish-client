@@ -6,7 +6,7 @@ import SocialButton from '@/components/Buttons/SocialButton'
 import TextInput from '@/components/TextInput'
 
 
-export default function register() {
+export default function Register() {
 
     // define router
     const router = useRouter()
