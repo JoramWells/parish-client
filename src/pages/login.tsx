@@ -15,7 +15,7 @@ export const metadata= {
   title:'Login'
 }
 
-export default function login() {
+export default function Login() {
 
   // define router
   const router = useRouter()
