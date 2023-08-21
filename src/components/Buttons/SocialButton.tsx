@@ -7,9 +7,9 @@ type Props = {
 
 function SocialButton({ text, imgSrc }: Props) {
   return (
-    <div className="text-sm flex justify-between transition ease-in-out
+    <div className="mt-4 w-full text-sm flex justify-center transition ease-in-out
       delay-150 cursor-pointer bg-gray-50 hover:-translate-y-1
-      hover:bg-gray-200 p-2
+      hover:bg-gray-200 p-3
       text-gray-700 rounded-lg motion-reduce:transition-none
       motion-reduce:hover:transform-none"
     >
@@ -18,6 +18,7 @@ function SocialButton({ text, imgSrc }: Props) {
         alt="img-logo"
         height={20}
         width={20}
+        className='mr-8'
       />
       {text}
     </div>

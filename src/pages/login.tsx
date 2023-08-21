@@ -60,7 +60,7 @@ export default function Login() {
 
           <TextInput label="Password" placeholder="Enter Password" />
 
-          <div className="block m-auto w-3/4">
+          <div className="w-full p-4 block m-auto lg:w-3/4 md:w-3/4">
             <div className="mt-8 flex justify-between align-center w-full">
               <div className="flex justify-start align-center">
                 <input type="checkbox" className="accent-blue-500" />
@@ -83,12 +83,12 @@ export default function Login() {
 
         </div>
 
-        <div className="text-2xl text-gray-500 font-bold text-center mt-5 mb-5">
+        <div className="mb-0 mt-0 text-xl lg:text-2xl md:text-2xl text-gray-500 font-bold text-center mt-5 mb-5">
           OR
         </div>
 
-        <div className="w-3/4 m-auto block">
-          <div className=" flex flex-row justify-between ">
+        <div className="w-full p-4 lg:p-0 lg:w-3/4 m-auto block">
+          <div className=" flex flex-col lg:flex-row justify-between ">
             <SocialButton text="Continue with Google" imgSrc="/imgs/google.png" />
             <SocialButton text="Continue with Facebook" imgSrc="/imgs/facebook.png" />
 
