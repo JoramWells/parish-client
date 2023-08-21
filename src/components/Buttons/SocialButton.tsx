@@ -18,7 +18,7 @@ function SocialButton({ text, imgSrc }: Props) {
         alt="img-logo"
         height={20}
         width={20}
-        className='mr-8'
+        className="mr-8"
       />
       {text}
     </div>
