@@ -7,7 +7,7 @@ type Props = {
 
 function SocialButton({ text, imgSrc }: Props) {
   return (
-    <div className=" flex justify-between transition ease-in-out
+    <div className="text-sm flex justify-between transition ease-in-out
       delay-150 cursor-pointer bg-gray-50 hover:-translate-y-1
       hover:bg-gray-200 p-2
       text-gray-700 rounded-lg motion-reduce:transition-none

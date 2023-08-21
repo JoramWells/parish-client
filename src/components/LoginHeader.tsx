@@ -8,7 +8,7 @@ type Props = {
 
 function LoginHeader({ text }: Props) {
   return (
-    <div className="block m-auto w-3/4">
+    <div className=" w-full p-4 block m-auto lg:w-3/4 md:3/4">
       <div className="flex justify-between align-center">
         <div className="text-2xl font-bold">
           {text}

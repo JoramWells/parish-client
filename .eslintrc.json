@@ -8,7 +8,7 @@
     "react-app",
     "react-app/jest",
     "airbnb",
-    // "airbnb-typescript",
+    "airbnb-typescript",
     "plugin:react/recommended",
     "plugin:import/typescript",
     "plugin:react/jsx-runtime",
