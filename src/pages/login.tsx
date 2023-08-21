@@ -1,29 +1,27 @@
-
 import { useRouter } from 'next/router';
 import dynamic from 'next/dynamic';
 import 'tailwindcss/tailwind.css';
-
-// import custom components
-const TextInput = dynamic(() => import('@/components/TextInput'), {
-  loading: () => <p>Loading</p>,
-})
-
-const SocialButton = dynamic(() => import("@/components/Buttons/SocialButton"), {
-  loading: () => <p>Loading</p>,
-})
-
-const LoginHeader = dynamic(() => import("@/components/LoginHeader"), {
-  loading: () => <p>Loading</p>
-})
 // import TextInput from '@/components/TextInput';
 // import SocialButton from '@/components/Buttons/SocialButton';
 // import LoginHeader from '@/components/LoginHeader';
-
 
 import '../../public/css/style.css';
 
 // util components
 import PrimaryButton from '@/components/Buttons/PrimaryButton';
+
+// import custom components
+const TextInput = dynamic(() => import('@/components/TextInput'), {
+  loading: () => <p>Loading</p>,
+});
+
+const SocialButton = dynamic(() => import('@/components/Buttons/SocialButton'), {
+  loading: () => <p>Loading</p>,
+});
+
+const LoginHeader = dynamic(() => import('@/components/LoginHeader'), {
+  loading: () => <p>Loading</p>,
+});
 
 // define metadata
 export const metadata = {
@@ -37,7 +35,7 @@ export default function Login() {
   //
   return (
 
-    <div className='p-4'>
+    <div className="p-4">
       <div
         style={{
           margin: 'auto',

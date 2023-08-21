@@ -1,13 +1,11 @@
-
-
 type Props = {
     children: String
 }
 
-const Index = ({ children }: Props) => {
+function Index({ children }: Props) {
     return (
-        <div className='p-2'>index</div>
-    )
+      <div className="p-2">{children}</div>
+    );
 }
 
-export default Index
+export default Index;
