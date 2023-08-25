@@ -5,7 +5,7 @@ type Props = {
 
 function TextInput({ label, placeholder }: Props) {
   return (
-    <div className="w-full p-4 mt-2 lg:mt-10 md:mt-10 sm:mt-5 lg:w-3/4 md:w-3/4 m-auto block ">
+    <div className="w-full p-4 mt-2 lg:mt-5 md:mt-5 sm:mt-5 lg:w-3/4 md:w-3/4 m-auto block ">
       <label htmlFor="email" className="text-gray-700">
         {label}
       </label>

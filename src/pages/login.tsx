@@ -47,7 +47,7 @@ export default function Login() {
           // marginTop: "10rem"
 
         }}
-        className="w-full w-1/2 lg:w-1/2 md:w-full sm:w-full"
+        className="w-full  lg:w-1/2 md:w-full sm:w-full"
       >
         <div className="flex justify-center align-center flex-col">
 
